@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Neha<span>.com</span></h1>
+            <nav>
+                <button class="hamburger-menu" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#what-i-do">Skills</a></li>
+                    <li><a href="#contact" class="header-contact-button">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Hello, I'm Neha</h2>
+                    <h3>Web Developer</h3>
+                    <p>A passionate web developer with a relentless drive for transforming ideas into not just websites, but digital experiences that captivate and resonate. In the realm of coding, I've discovered the art of crafting not just lines of code, but intricate digital landscapes that blend beauty with functionality.</p>
+                    <p>Let's create something remarkable together.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact">Contact Me</a>
+                        <a href="#">Download Resume <i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <img src="NehaTK.jpg" alt="Neha's Profile Picture">
+                </div>
+            </div>
+            <div class="hero-bottom-gradient"></div>
+        </section>
+
+        <section id="about-details">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-me-content">
+                    <div class="about-me-image">
+                        <img src="about.jpg" alt="Related field image">
+                    </div>
+                    <div class="about-me-text">
+                        <p>As a self-taught web developer based in Calicut, I am constantly seeking opportunities to expand my skill set and delve into new technologies. My journey into coding has been driven by a fascination with how digital interactions shape our daily lives, leading me to build engaging and intuitive web solutions.</p>
+                        <p>I thrive on turning complex problems into elegant code, always aiming to deliver high-quality, performant applications. My passion lies in crafting visually appealing and highly functional user experiences, and I am committed to continuous learning and innovation in the ever-evolving landscape of web development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="what-i-do">
+            <div class="container">
+                <h2>What I do</h2>
+                <div class="what-i-do-grid">
+                    <div class="what-i-do-item">
+                        <span class="icon html-js-css">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor">
+                                <path d="M0 32l34.9 395.8L256 480l221.1-52.2L576 32H0zm431.9 295.4L256 364.1 144.1 327.4 135.2 221l111.4-.2 6.8 77.2 96.6-26.3 2.7-28.7-104.2-22.3-.3-23.7 178.6-40.4 2.7-27.1-205.3 43.7L256 120.5l-20.1-2.9L164.2 104l-3.3-36.6 204.7-50.5 4-44.4H136.6L129.5 96l10-104.2h327.3l-28.1 316.2z"/>
+                            </svg>
+                        </span>
+                        <h3>Front-End Development</h3>
+                        <p>Building responsive and engaging user interfaces with modern web technologies.</p>
+                    </div>
+                    <div class="what-i-do-item">
+                        <span class="icon"><i class="fa-solid fa-server"></i></span>
+                        <h3>Back-End Development</h3>
+                        <p>Developing robust server-side logic and APIs for dynamic applications.</p>
+                    </div>
+                    <div class="what-i-do-item">
+                        <span class="icon"><i class="fa-solid fa-code-branch"></i></span>
+                        <h3>Version Control</h3>
+                        <p>Managing code with Git and collaborating effectively on projects.</p>
+                    </div>
+                    <div class="what-i-do-item">
+                        <span class="icon"><i class="fa-solid fa-database"></i></span>
+                        <h3>Database Management</h3>
+                        <p>Designing and managing efficient databases for data storage and retrieval.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="container contact-form-container">
+                <h2>Get In Touch</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="firstName" name="firstName" placeholder=" " required>
+                        <label for="firstName">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="lastName" name="lastName" placeholder=" " required>
+                        <label for="lastName">Last Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder=" ">
+                        <label for="phone">Phone number</label>
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea id="message" name="message" placeholder=" " required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top-gradient"></div>
+        <div class="container">
+            <p>Neha<span>.com</span> &bull; All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
